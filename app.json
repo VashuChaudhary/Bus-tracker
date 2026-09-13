@@ -1,0 +1,22 @@
+{
+	"expo": {
+		"name": "SafeTrack",
+		"slug": "safetrack",
+		"version": "0.1.0",
+		"orientation": "portrait",
+		"userInterfaceStyle": "light",
+		"android": {
+			"package": "com.safetrack.prototype",
+			"permissions": ["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION"]
+		},
+		"plugins": [
+			"expo-status-bar",
+			[
+				"expo-location",
+				{
+					"locationAlwaysAndWhenInUsePermission": "SafeTrack uses your location to share the bus position during an active trip."
+				}
+			]
+		]
+	}
+}

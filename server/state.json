@@ -1,0 +1,51 @@
+{
+  "routes": [
+    {
+      "id": "route-1789304519343",
+      "name": "R1",
+      "stops": [
+        {
+          "id": "custom-1789305379188",
+          "name": "Street Number 13, DABRI, Mahavir Enclave, Najafgarh, Delhi, South West Delhi, Delhi, 110064, India",
+          "lat": 28.6084663,
+          "lng": 77.0995375,
+          "scheduledMinutes": 0,
+          "radius": 180
+        },
+        {
+          "id": "custom-1789305404600",
+          "name": "Cinepolis, Pankha Road, DABRI, Janakpuri, West, Delhi, West Delhi, Delhi, 110064, India",
+          "lat": 28.6111629,
+          "lng": 77.0937294,
+          "scheduledMinutes": 0,
+          "radius": 180
+        },
+        {
+          "id": "custom-1789305411674",
+          "name": "C4E, Janakpuri, West, Delhi, West Delhi, Delhi, India",
+          "lat": 28.6168439,
+          "lng": 77.0886313,
+          "scheduledMinutes": 0,
+          "radius": 180
+        },
+        {
+          "id": "custom-1789305421257",
+          "name": "Mata Chanan Devi Hospital Blood Bank, Mata Chanan Devi Hospital Blood Bank, Lal Sai Marg, Asalatpur Gaon, Janakpuri, West, New Delhi, South West Delhi, Delhi, 110058, India",
+          "lat": 28.6189503,
+          "lng": 77.078222,
+          "scheduledMinutes": 0,
+          "radius": 180
+        }
+      ]
+    }
+  ],
+  "selectedRouteId": "route-1789304519343",
+  "tripActive": true,
+  "simulationMode": false,
+  "progress": 0.1,
+  "liveLocation": {
+    "lat": 28.6084469,
+    "lng": 77.099528
+  },
+  "lastUpdated": "2026-09-13T13:23:36.751Z"
+}

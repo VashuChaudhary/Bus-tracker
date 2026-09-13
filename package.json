@@ -1,0 +1,28 @@
+{
+	"name": "safetrack",
+	"version": "0.1.0",
+	"private": true,
+	"main": "node_modules/expo/AppEntry.js",
+	"scripts": {
+		"start": "expo start",
+		"sync-server": "node server/sync-server.mjs",
+		"mobile-test": "node scripts/mobile-test.mjs",
+		"android": "expo start --android",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"expo": "^57.0.22",
+		"expo-location": "~57.0.17",
+		"expo-status-bar": "~57.0.1",
+		"react": "19.2.3",
+		"react-native": "0.86.3",
+		"react-native-maps": "1.27.2",
+		"react-native-safe-area-context": "~5.7.0",
+		"react-native-webview": "13.16.1"
+	},
+	"devDependencies": {
+		"@types/react": "~19.2.4",
+		"localtunnel": "^2.0.2",
+		"typescript": "~6.0.3"
+	}
+}

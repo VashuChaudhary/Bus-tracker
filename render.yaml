@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: safetrack-sync
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm run sync-server
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
