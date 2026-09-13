@@ -2,3 +2,7 @@ node_modules/
 .expo/
 dist/
 .env
+proofs/
+.gitignore
+PRD_SafeTrack_Bus_Tracker.docx
+SafeTrack_PRD.docx

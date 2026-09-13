@@ -53,11 +53,11 @@ export function ParentView({
 				}}
 			>
 				<View>
-					<Text style={{ fontSize: 20, fontWeight: "800", color: "#172033" }}>
-						BUS-04 • Route R-12
+					<Text style={{ fontSize: 22, fontWeight: "900", color: "#123660" }}>
+						BUS-04
 					</Text>
-					<Text style={{ color: "#64748b", fontSize: 13, lineHeight: 19 }}>
-						Your stop: Green Valley Gate
+					<Text style={{ color: "#2e7d6b", fontSize: 12, fontWeight: "800" }}>
+						School route • Your ride
 					</Text>
 				</View>
 				<StatusPill status={status} />
@@ -65,9 +65,16 @@ export function ParentView({
 
 			<View
 				style={{
-					borderRadius: 12,
-					padding: 13,
+					borderRadius: 16,
+					padding: 16,
 					marginBottom: 16,
+					borderWidth: 1,
+					borderColor:
+						tone === "danger"
+							? "#f4b4b4"
+							: tone === "warning"
+								? "#efd38a"
+								: "#cfe2dc",
 					backgroundColor:
 						tone === "danger"
 							? "#fee2e2"
@@ -76,7 +83,16 @@ export function ParentView({
 								: "#e2e8f0",
 				}}
 			>
-				<Text style={{ fontWeight: "700", color: "#334155" }}>{alertText}</Text>
+				<Text
+					style={{
+						fontWeight: "800",
+						color: "#233746",
+						fontSize: 14,
+						lineHeight: 21,
+					}}
+				>
+					{alertText}
+				</Text>
 			</View>
 
 			<RouteMap
@@ -89,17 +105,29 @@ export function ParentView({
 			<View
 				style={{
 					backgroundColor: "#fff",
-					borderRadius: 14,
+					borderRadius: 16,
 					borderWidth: 1,
 					borderColor: "#dfe7ee",
-					padding: 16,
+					padding: 18,
 					marginBottom: 16,
+					shadowColor: "#123660",
+					shadowOpacity: 0.06,
+					shadowRadius: 10,
+					shadowOffset: { width: 0, height: 4 },
+					elevation: 2,
 				}}
 			>
-				<Text style={{ fontWeight: "700", color: "#1f2937", marginBottom: 8 }}>
+				<Text
+					style={{
+						fontWeight: "800",
+						color: "#1f2937",
+						marginBottom: 8,
+						fontSize: 14,
+					}}
+				>
 					ETA to {nextStop.name}
 				</Text>
-				<Text style={{ fontWeight: "800", color: "#123660", fontSize: 28 }}>
+				<Text style={{ fontWeight: "900", color: "#123660", fontSize: 34 }}>
 					{status === "NOT_STARTED" ? "-" : `${eta} min`}
 				</Text>
 				<Text style={{ color: "#64748b", fontSize: 13, lineHeight: 19 }}>

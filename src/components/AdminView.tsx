@@ -227,11 +227,18 @@ export function AdminView({
 
 	return (
 		<>
-			<Text style={{ fontSize: 20, fontWeight: "800", color: "#172033" }}>
+			<Text style={{ fontSize: 24, fontWeight: "900", color: "#123660" }}>
 				Transport dashboard
 			</Text>
-			<Text style={{ color: "#64748b", fontSize: 13, lineHeight: 19 }}>
-				Live route management • current service health
+			<Text
+				style={{
+					color: "#2e7d6b",
+					fontSize: 12,
+					lineHeight: 19,
+					fontWeight: "800",
+				}}
+			>
+				SCHOOL OPERATIONS • LIVE SERVICE HEALTH
 			</Text>
 
 			<View
@@ -403,10 +410,15 @@ export function AdminView({
 						padding: 12,
 						borderWidth: 1,
 						borderColor: "#edf2f7",
-						borderRadius: 10,
+						borderRadius: 16,
 						marginBottom: 8,
-					}}
+						borderColor: "#d7e3df",
 				>
+						shadowColor: "#123660",
+						shadowOpacity: 0.05,
+						shadowRadius: 8,
+						shadowOffset: { width: 0, height: 3 },
+						elevation: 1,
 					<View
 						style={{
 							width: 10,

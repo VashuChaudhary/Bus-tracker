@@ -30,11 +30,18 @@ export function DriverView({
 }) {
 	return (
 		<>
-			<Text style={{ fontSize: 20, fontWeight: "800", color: "#172033" }}>
-				BUS-04 • Driver console
-			</Text>
-			<Text style={{ color: "#64748b", fontSize: 13, lineHeight: 19 }}>
+			<Text style={{ fontSize: 24, fontWeight: "900", color: "#123660" }}>
 				Driver console
+			</Text>
+			<Text
+				style={{
+					color: "#2e7d6b",
+					fontSize: 12,
+					lineHeight: 19,
+					fontWeight: "800",
+				}}
+			>
+				BUS-04 • SafeTrack fleet
 			</Text>
 
 			<Text
@@ -53,7 +60,7 @@ export function DriverView({
 					backgroundColor: "#fff",
 					borderWidth: 1,
 					borderColor: "#dfe7ee",
-					borderRadius: 12,
+					borderRadius: 16,
 					overflow: "hidden",
 					marginBottom: 16,
 				}}
@@ -86,9 +93,14 @@ export function DriverView({
 					backgroundColor: "#fff",
 					borderRadius: 14,
 					borderWidth: 1,
-					borderColor: "#dfe7ee",
-					padding: 16,
+					borderColor: active ? "#9ad3c4" : "#d7e3df",
+					padding: 18,
 					marginVertical: 18,
+					shadowColor: "#123660",
+					shadowOpacity: 0.06,
+					shadowRadius: 10,
+					shadowOffset: { width: 0, height: 4 },
+					elevation: 2,
 				}}
 			>
 				<View
@@ -97,14 +109,14 @@ export function DriverView({
 						height: 12,
 						borderRadius: 999,
 						marginBottom: 10,
-						backgroundColor: active ? "#21a366" : "#94a3b8",
+						backgroundColor: active ? "#2e9c7f" : "#f7c948",
 					}}
 				/>
 				<Text
 					style={{
 						fontSize: 18,
 						fontWeight: "800",
-						color: "#123660",
+						color: active ? "#177c68" : "#123660",
 						marginBottom: 6,
 					}}
 				>
@@ -120,11 +132,16 @@ export function DriverView({
 			<Pressable
 				style={[
 					{
-						backgroundColor: "#17324d",
-						borderRadius: 12,
+						backgroundColor: "#123660",
+						borderRadius: 14,
 						paddingVertical: 14,
 						alignItems: "center",
 						marginBottom: 16,
+						shadowColor: "#123660",
+						shadowOpacity: 0.18,
+						shadowRadius: 8,
+						shadowOffset: { width: 0, height: 4 },
+						elevation: 3,
 					},
 					active && { backgroundColor: "#b54747" },
 				]}

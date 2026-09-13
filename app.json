@@ -1,32 +1,37 @@
 {
-  "expo": {
-    "name": "SafeTrack",
-    "slug": "safetrack",
-    "version": "0.1.0",
-    "orientation": "portrait",
-    "userInterfaceStyle": "light",
-    "android": {
-      "package": "com.safetrack.prototype",
-      "permissions": [
-        "ACCESS_COARSE_LOCATION",
-        "ACCESS_FINE_LOCATION",
-        "android.permission.ACCESS_COARSE_LOCATION",
-        "android.permission.ACCESS_FINE_LOCATION"
-      ]
-    },
-    "plugins": [
-      "expo-status-bar",
-      [
-        "expo-location",
-        {
-          "locationAlwaysAndWhenInUsePermission": "SafeTrack uses your location to share the bus position during an active trip."
-        }
-      ]
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "47dc7ba7-8ac3-423e-b7fa-3f016be9a2c1"
-      }
-    }
-  }
+	"expo": {
+		"name": "SafeTrack",
+		"icon": "./assets/icon.png",
+		"slug": "safetrack",
+		"version": "0.1.0",
+		"orientation": "portrait",
+		"userInterfaceStyle": "light",
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/icon.png",
+				"backgroundColor": "#123660"
+			},
+			"package": "com.safetrack.prototype",
+			"permissions": [
+				"ACCESS_COARSE_LOCATION",
+				"ACCESS_FINE_LOCATION",
+				"android.permission.ACCESS_COARSE_LOCATION",
+				"android.permission.ACCESS_FINE_LOCATION"
+			]
+		},
+		"plugins": [
+			"expo-status-bar",
+			[
+				"expo-location",
+				{
+					"locationAlwaysAndWhenInUsePermission": "SafeTrack uses your location to share the bus position during an active trip."
+				}
+			]
+		],
+		"extra": {
+			"eas": {
+				"projectId": "47dc7ba7-8ac3-423e-b7fa-3f016be9a2c1"
+			}
+		}
+	}
 }

@@ -458,31 +458,75 @@ export default function App() {
 
 	return (
 		<SafeAreaProvider>
-			<SafeAreaView style={{ flex: 1, backgroundColor: "#f6f8fb" }}>
+			<SafeAreaView style={{ flex: 1, backgroundColor: "#eef4f1" }}>
 				<StatusBar style="dark" />
-				<ScrollView contentContainerStyle={{ padding: 20, paddingBottom: 40 }}>
+				<ScrollView
+					contentContainerStyle={{
+						padding: 20,
+						paddingTop: 18,
+						paddingBottom: 48,
+					}}
+				>
 					<View
 						style={{
 							flexDirection: "row",
 							justifyContent: "space-between",
 							alignItems: "center",
-							marginBottom: 26,
+							marginBottom: 24,
+							paddingBottom: 18,
+							borderBottomWidth: 1,
+							borderBottomColor: "#d7e3df",
 						}}
 					>
-						<View>
-							<Text
-								style={{ color: "#123660", fontSize: 32, fontWeight: "800" }}
+						<View
+							style={{ flexDirection: "row", alignItems: "center", gap: 10 }}
+						>
+							<View
+								style={{
+									width: 42,
+									height: 42,
+									borderRadius: 13,
+									backgroundColor: "#123660",
+									alignItems: "center",
+									justifyContent: "center",
+								}}
 							>
-								SafeTrack
-							</Text>
-							<Text style={{ color: "#64748b", fontSize: 13, lineHeight: 19 }}>
-								School transport visibility
-							</Text>
+								<Text
+									style={{ color: "#f7c948", fontSize: 14, fontWeight: "900" }}
+								>
+									ST
+								</Text>
+							</View>
+							<View>
+								<Text
+									style={{ color: "#123660", fontSize: 26, fontWeight: "900" }}
+								>
+									SafeTrack
+								</Text>
+								<Text
+									style={{
+										color: "#2e7d6b",
+										fontSize: 10,
+										fontWeight: "800",
+										letterSpacing: 1,
+									}}
+								>
+									SCHOOL TRANSPORT
+								</Text>
+							</View>
 						</View>
-						<View style={{ padding: 6 }}>
+						<View
+							style={{
+								padding: 8,
+								backgroundColor: "#fff",
+								borderRadius: 10,
+								borderWidth: 1,
+								borderColor: "#d7e3df",
+							}}
+						>
 							<Text
 								onPress={() => setRole(null)}
-								style={{ color: "#155fa0", fontWeight: "700" }}
+								style={{ color: "#155fa0", fontWeight: "800", fontSize: 12 }}
 							>
 								Switch role
 							</Text>
