@@ -12,7 +12,9 @@ type SharedState = {
 
 const explicitUrl = process.env.EXPO_PUBLIC_API_URL;
 const metroHost = process.env.EXPO_PUBLIC_METRO_HOST;
-const apiBaseUrl = explicitUrl ?? `http://${metroHost ?? "192.168.1.19"}:3001`;
+const apiBaseUrl =
+	process.env.EXPO_PUBLIC_API_URL?.replace(/\/+$/, "") ||
+	"https://bus-tracker-w5oh.onrender.com";
 
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
 	const response = await fetch(`${apiBaseUrl}${path}`, {
